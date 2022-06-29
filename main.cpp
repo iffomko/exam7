@@ -6,7 +6,7 @@ class thing {
     double weight;
     int prof;
 public:
-    thing() {  };
+    thing() {};
 
     thing(std::string title, double weight, int prof) {
         this->title = title;
@@ -84,6 +84,11 @@ int main() {
                 indexes[count] = i;
                 count++;
             }
+
+        if (count == 0) {
+            std::cout << "Nope, sorry..\n";
+//            return 0;
+        }
 
         for (int i = 0; i < count - 1; i++)
             for (int j = i + 1; j < count; j++)
